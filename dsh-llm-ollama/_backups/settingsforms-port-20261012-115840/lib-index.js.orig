@@ -1,0 +1,39 @@
+import z from '@deepseek-ai/schemastery';
+import { installSettingsSection, settingsNamespace } from '@deepseek-ai/dsh-settings';
+import { OllamaAdapter } from './adapter.js';
+export const name = '@dsh-external/dsh-llm-ollama';
+export const inject = ['llm'];
+export const Config = z.object({
+    baseUrl: z.string().default('http://127.0.0.1:11434'),
+    apiKey: z.string().default(''),
+    contextWindow: z.number().default(32768),
+    maxTokens: z.number().default(8192),
+});
+/** 设置命名空间（模型设置页的 section 归属）。 */
+const NS = settingsNamespace('llm-ollama');
+export function apply(ctx, config) {
+    // 当前配置源：初始为插件 config，设置页保存后切换为 settings 快照
+    let current = () => config;
+    const adapter = new OllamaAdapter(() => current());
+    const registration = ctx.llm.registerAdapter(['ollama'], adapter);
+    // 声明为可配置 provider → UI 模型选择器/模型设置页可见
+    ctx.llm.registerConfigurableProviders([{
+            provider: 'ollama',
+            displayName: 'Ollama 本地',
+            settingsNs: NS,
+            settingsPath: [],
+        }]);
+    // 设置页 section（baseUrl/apiKey/contextWindow/maxTokens 可改，改后即时生效）
+    installSettingsSection(ctx, NS, Config, config, {
+        setSource: (source) => { current = source; },
+        onChange: () => { },
+    });
+    ctx.effect(() => () => {
+        try {
+            registration();
+        }
+        catch { /* 卸载容错 */ }
+    });
+    ctx.logger?.info?.(`[dsh-llm-ollama] provider 'ollama' configurable (baseUrl=${current().baseUrl}, contextWindow=${current().contextWindow})`);
+}
+//# sourceMappingURL=index.js.map

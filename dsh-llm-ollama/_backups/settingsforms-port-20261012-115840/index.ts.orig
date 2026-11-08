@@ -1,0 +1,71 @@
+/**
+ * @dsh-external/dsh-llm-ollama — Ollama LLM 适配器插件。
+ * 向 DSH 注册 provider 路由 'ollama'（OpenAI 兼容 API），并声明为可配置 provider：
+ * - registerConfigurableProviders → 出现在模型设置页/模型选择器（displayName 'Ollama 本地'）
+ * - installSettingsSection → 设置页可配置 baseUrl/apiKey 等（settingsNs 'llm-ollama'）
+ * - adapter 以 getter 读配置：设置修改后即时生效（无需重建实例）
+ */
+import type { Context } from '@deepseek-ai/cordis'
+import type LlmService from '@deepseek-ai/dsh-llm'
+import z from '@deepseek-ai/schemastery'
+import { installSettingsSection, settingsNamespace } from '@deepseek-ai/dsh-settings'
+import { OllamaAdapter } from './adapter.js'
+import type { OllamaAdapterConfig } from './adapter.js'
+
+type AppContext = Context & {
+  llm: LlmService
+}
+
+export const name = '@dsh-external/dsh-llm-ollama'
+export const inject = ['llm']
+
+export interface Config {
+  /** Ollama 服务地址（含协议与端口）。 */
+  baseUrl: string
+  /** 可选 API key（Ollama 0.5+ OLLAMA_API_KEY 场景）；本地默认空。 */
+  apiKey: string
+  /** 本地模型默认上下文窗口（token）。 */
+  contextWindow: number
+  /** 本地模型默认单次输出上限（token）。 */
+  maxTokens: number
+}
+
+export const Config = z.object({
+  baseUrl: z.string().default('http://127.0.0.1:11434'),
+  apiKey: z.string().default(''),
+  contextWindow: z.number().default(32768),
+  maxTokens: z.number().default(8192),
+})
+
+/** 设置命名空间（模型设置页的 section 归属）。 */
+const NS = settingsNamespace('llm-ollama')
+
+export function apply(ctx: AppContext, config: Config): void {
+  // 当前配置源：初始为插件 config，设置页保存后切换为 settings 快照
+  let current: () => Config = () => config
+
+  const adapter = new OllamaAdapter(() => current())
+  const registration = ctx.llm.registerAdapter(['ollama'], adapter)
+
+  // 声明为可配置 provider → UI 模型选择器/模型设置页可见
+  ctx.llm.registerConfigurableProviders([{
+    provider: 'ollama',
+    displayName: 'Ollama 本地',
+    settingsNs: NS,
+    settingsPath: [],
+  }])
+
+  // 设置页 section（baseUrl/apiKey/contextWindow/maxTokens 可改，改后即时生效）
+  installSettingsSection(ctx, NS, Config, config, {
+    setSource: (source) => { current = source },
+    onChange: () => {},
+  })
+
+  ctx.effect(() => () => {
+    try { registration() } catch { /* 卸载容错 */ }
+  })
+
+  ctx.logger?.info?.(
+    `[dsh-llm-ollama] provider 'ollama' configurable (baseUrl=${current().baseUrl}, contextWindow=${current().contextWindow})`,
+  )
+}

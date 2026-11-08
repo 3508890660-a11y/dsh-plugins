@@ -1,0 +1,27 @@
+{
+  "name": "@dsh-external/novel-editor",
+  "version": "0.1.0",
+  "description": "小说编辑引擎（本地 novel-editor 模型，QLoRA 微调 Qwen3-4B）：校对/轻度修正/深度润色/一致性审查，经 Ollama 推理，与 dsh-novel-writer 数据互通",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": ">=0.0.1-rc <2",
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2",
+    "cordis": ">=4.0.0-rc <5",
+    "@deepseek-ai/schemastery": "^3.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.0"
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@dsh-external/shortnovel-workflow",
+  "version": "0.1.0",
+  "description": "墨安式爆款短篇创作工作流（DSH 插件）：主题/脑洞 → 脑洞(5个) → 导语(5条爆款导语) → 大纲(10章×10剧情点, 按题材公式) → 正文(强去AI味,一句一行,~1.2万字) → 审稿(付费点+修改方案+改后全文)。严格分步、逐阶段确认，复用 DSH 模型服务。",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": ">=0.0.1-rc <2",
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc <2",
+    "cordis": ">=4.0.0-rc <5",
+    "@deepseek-ai/schemastery": "^3.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.0"
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  }
+}
