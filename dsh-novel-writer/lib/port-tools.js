@@ -1610,7 +1610,7 @@ export function buildPortTools(ctx) {
                 assert(query !== '', 'novel_semantic_search 需要 query 参数');
                 const ready = await embedding.isAvailable();
                 if (!ready) {
-                    return { projectId, query, available: false, results: [], message: '语义引擎不可用（模型文件缺失/加载失败）：确认 lib/legacy/models/ 含 bge-small-zh 模型文件；插件已回退纯规则模式，不影响其他功能。' };
+                    return { projectId, query, available: false, results: [], message: '语义引擎不可用（模型文件缺失/加载失败）：确认 lib/legacy/models/ 含 bge-large-zh-v1.5 模型文件；插件已回退纯规则模式，不影响其他功能。' };
                 }
                 const rows = chapterRows(project);
                 const chunks = [];

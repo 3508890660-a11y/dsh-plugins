@@ -38,6 +38,25 @@ dsh-novel-writer/lib/legacy/models/onnx/model_quantized.onnx   # 约 311 MB
 
 仓库里保留了一份空目录结构说明：`src/legacy/models/` 有 `config.json`、`tokenizer.json`、`tokenizer_config.json`、`special_tokens_map.json`，唯独缺 `onnx/`。
 
+**模型同样不打进 npm 发布包。** `dsh-novel-writer` 的 `package.json` 用 `files` 负向规则把它排除了：
+
+```json
+"files": ["lib", "!lib/legacy/models/onnx/*.onnx"]
+```
+
+包体因此从 313 MB 降到 2.3 MB。模型缺失时代码走优雅降级——`initEngine()` 懒加载且整体 try/catch，`isAvailable()` 直接返回 `false`，`novel_semantic_search` 返回「语义引擎不可用」提示，其余功能不受影响。
+
+## 发布打包注意事项
+
+`files` 数组会被 npm-packlist 转成**反向忽略规则**，优先级高于 `.npmignore` / `.gitignore`——所以各插件 `.gitignore` 里的 `lib/` 对打包不生效，别指望它排除任何东西。
+
+两个插件踩过的坑，改动都已进仓库：
+
+- **`dsh-character-maker`**：原 `files: ["lib"]` 会把 16 个问卷题库（`assets/`，512 KB）和 `cordis.patch.yml`（DSH 启动时读取的 bundle patch）一起漏掉，装好后第一次调用 `character_*` 工具即 `ENOENT` 崩溃。现为 `["lib", "assets", "cordis.patch.yml"]`。
+- **`dsh-novel-writer`**：原 `files: ["lib"]` 会把 311 MB 的 onnx 模型一起打包。现用负向规则排除（见上）。
+
+> 开发环境不会暴露这两个问题：插件是 symlink 进 `node_modules` 的，`realpathSync` 把链接解析回源码目录，那里的 `assets/` 和模型都在。只有真正的打包安装才会触发。
+
 ## 构建
 
 除 `dsh-llm-probe` 外，每个插件都有 `scripts/build.sh`：

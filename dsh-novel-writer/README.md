@@ -174,7 +174,7 @@ projects/<id>/
 - 风格自检与风格画像报告（文笔六维基线带）
 - 全球设定五表 + 文化基准自动检测（western/eastern/modern）、语用扫描
 - 章节摘要、连续性审计（数字口径/人物缺场/衔接/大纲对照/OOC 哨兵）、伏笔登记表（scan 更新提及）
-- 语义检索（本地 onnx embedding，bge-small-zh-v1.5 量化模型，512 维，zstd + 指纹增量索引缓存）
+- 语义检索（本地 onnx embedding，bge-large-zh-v1.5 量化模型，1024 维降采样至 256 维，zstd + 指纹增量索引缓存）
 - 批量导入原稿件（scan/apply、异名同书强制归并、GBK 兼容）
 
-> 语义检索与题材/氛围检测依赖本地嵌入引擎（onnxruntime-web + @huggingface/tokenizers）与 `src/legacy/models/` 模型文件；若这些资源缺失，`novel_semantic_search` 会返回「不可用」提示，其余功能不受影响。
+> 语义检索与题材/氛围检测依赖本地嵌入引擎（onnxruntime-web + @huggingface/tokenizers）与 `lib/legacy/models/` 模型文件；该 onnx 模型（约 311 MB）**不随 npm 包分发**，需单独放置到 `lib/legacy/models/onnx/model_quantized.onnx`。若资源缺失，`novel_semantic_search` 会返回「不可用」提示，其余功能不受影响。
