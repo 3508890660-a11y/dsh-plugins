@@ -1,0 +1,38 @@
+{
+  "id": "ecr12",
+  "name": "亲密关系经历量表——简版（ECR-S）",
+  "shortName": "依恋风格（ECR-12）",
+  "family": "attachment",
+  "scaleMin": 1,
+  "scaleMax": 7,
+  "scaleLabels": [
+    "非常不同意",
+    "不同意",
+    "有点不同意",
+    "说不清（既不同意也不反对）",
+    "有点同意",
+    "同意",
+    "非常同意"
+  ],
+  "description": "亲密关系经历量表（ECR）的 12 题简版，从两个维度测量成人依恋：焦虑维度（对被拒绝/被抛弃的恐惧）与回避维度（对亲近/依赖的不适）。",
+  "citation": "Wei, M., Russell, D. W., Mallinckrodt, B., & Vogel, D. L. (2007). The Experiences in Close Relationship Scale (ECR)–Short Form: Reliability, validity, and factor structure. Journal of Personality Assessment, 88(2), 187–204.",
+  "license": "Free for non-commercial research use.",
+  "dimensions": [
+    { "id": "attachment_anxiety",   "label": "依恋焦虑" },
+    { "id": "attachment_avoidance", "label": "依恋回避" }
+  ],
+  "items": [
+    { "position": 1,  "text": "在需要的时候，向人求助是有帮助的。",                                       "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 2,  "text": "我需要感觉到我的伴侣是爱我的。",                                      "dimension": "attachment_anxiety" },
+    { "position": 3,  "text": "我想靠近我的伴侣，却总会忍不住往后退缩。",                        "dimension": "attachment_avoidance" },
+    { "position": 4,  "text": "我发现我的伴侣并不想和我亲近到我期望的那种程度。",               "dimension": "attachment_anxiety" },
+    { "position": 5,  "text": "很多事我都会求助我的伴侣，包括寻求安慰和鼓励。",           "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 6,  "text": "我渴望极度亲密，有时会把别人吓跑。",                           "dimension": "attachment_anxiety" },
+    { "position": 7,  "text": "我尽量试着不要和伴侣太过亲近。",                                    "dimension": "attachment_avoidance" },
+    { "position": 8,  "text": "我并不过于担心自己会被抛弃。",                                        "dimension": "attachment_anxiety", "reverseKeyed": true },
+    { "position": 9,  "text": "我通常会与伴侣谈起我的问题与烦恼。",                        "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 10, "text": "当我需要伴侣的时候，他/她却不出现，我会感到沮丧。",                  "dimension": "attachment_anxiety" },
+    { "position": 11, "text": "我很容易就能对伴侣表现出亲昵和温情。",                              "dimension": "attachment_avoidance", "reverseKeyed": true },
+    { "position": 12, "text": "我担心伴侣对我的在乎，比不上我对伴侣的在乎。",         "dimension": "attachment_anxiety" }
+  ]
+}

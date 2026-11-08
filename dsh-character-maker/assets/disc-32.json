@@ -1,0 +1,202 @@
+{
+  "id": "obsi32",
+  "name": "开放行为风格量表 (OBSI-32 / DISC)",
+  "shortName": "DISC 行为风格",
+  "family": "workplace",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "非常不同意",
+    "不同意",
+    "既不同意也不反对",
+    "同意",
+    "非常同意"
+  ],
+  "description": "32-item open-source Likert screening inventory for four behavioral styles — Dominance, Influence, Steadiness, and Conscientiousness — inspired by Marston's (1928) DISC model. Eight items per style, interleaved in a fixed D-I-S-C rotation. This is an original instrument written for this study; it is not any of the commercial DISC assessments and reproduces none of their proprietary forced-choice items. The style with the highest mean score is the candidate primary style; a second style within 0.30 of the primary is reported as a blended profile (e.g. DC, SI).",
+  "citation": "Marston, W. M. (1928). Emotions of Normal People. Kegan Paul, Trench, Trubner & Co. (OBSI-32 items constructed for this study; the four-style model is used as the theoretical frame only.)",
+  "license": "OBSI-32 items © this study, released CC-BY. The DISC four-factor model is public domain; 'DiSC' and 'Everything DiSC' are trademarks of John Wiley & Sons and are not used here.",
+  "dimensions": [
+    {
+      "id": "disc_d",
+      "label": "支配 (D)",
+      "description": "Direct, decisive, results-driven; takes charge, comfortable with conflict, impatient with delay"
+    },
+    {
+      "id": "disc_i",
+      "label": "影响 (I)",
+      "description": "Enthusiastic, persuasive, sociable, optimistic; people-oriented, seeks recognition, acts on impulse"
+    },
+    {
+      "id": "disc_s",
+      "label": "稳健 (S)",
+      "description": "Patient, calm, loyal, supportive; prefers stability and harmony, dislikes being rushed or surprised"
+    },
+    {
+      "id": "disc_c",
+      "label": "尽责 (C)",
+      "description": "Analytical, precise, systematic, cautious; fact-based, high standards, follows procedure, reserved"
+    }
+  ],
+  "items": [
+    {
+      "position": 1,
+      "text": "我习惯很快接手局面，并决定接下来该做什么。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 2,
+      "text": "我能带动全场气氛，喜欢成为众人瞩目的焦点。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 3,
+      "text": "即使别人情绪激动，我也能保持冷静平和。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 4,
+      "text": "在下结论之前，我会仔细核对事实和细节。",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 5,
+      "text": "我更看重结果，而不是过程中别人感受如何。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 6,
+      "text": "比起讲事实，我更能用热情与亲和力打动别人。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 7,
+      "text": "我更喜欢稳定可预见的日常，而不是频繁的变化。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 8,
+      "text": "我宁愿遵循既定流程和标准，也不愿即兴发挥。",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 9,
+      "text": "出问题时，我能自在地当面与人对质。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 10,
+      "text": "我容易结交朋友，也能主动和陌生人攀谈。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 11,
+      "text": "我是耐心的倾听者，会等别人说完再回应。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 12,
+      "text": "我宁可慢但准确。",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 13,
+      "text": "讨论迟迟没有结果时，我会变得不耐烦。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 14,
+      "text": "我倾向看到好的一面，相信事情会办成。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 15,
+      "text": "即使处境艰难，我也会忠于所参与的人和团体。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 16,
+      "text": "在承诺某个计划之前，我会先问很多问题。",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 17,
+      "text": "我喜欢竞争，输赢能激励我。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 18,
+      "text": "我更喜欢和人一起讨论想法，而不是独自琢磨。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 19,
+      "text": "我把团体的需要放在自己的需要之前。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 20,
+      "text": "我把情绪藏在心里，做决定依赖逻辑。",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 21,
+      "text": "我宁愿大胆行动、之后再纠正，也不愿苦等确切。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 22,
+      "text": "我喜欢我的贡献得到认可与赞扬。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 23,
+      "text": "我讨厌被人催促，喜欢稳定匀速地工作。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 24,
+      "text": "我对自己和他人的工作都要求高质量。",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 25,
+      "text": "有人想控制我做的事时，我会强烈反抗。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 26,
+      "text": "我凭冲动行事，哪里有刺激就往哪里去。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 27,
+      "text": "我回避冲突，努力维持关系的和谐。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 28,
+      "text": "我对风险很谨慎，想弄清什么事可能出错。",
+      "dimension": "disc_c"
+    },
+    {
+      "position": 29,
+      "text": "我会设定很高的目标，并期望别人跟上。",
+      "dimension": "disc_d"
+    },
+    {
+      "position": 30,
+      "text": "我宁愿激励别人朝目标前进，也不愿去管达成的细节。",
+      "dimension": "disc_i"
+    },
+    {
+      "position": 31,
+      "text": "在承诺新的做事方式之前，我需要时间适应。",
+      "dimension": "disc_s"
+    },
+    {
+      "position": 32,
+      "text": "需要精确和专注的任务，我更喜欢独立完成。",
+      "dimension": "disc_c"
+    }
+  ]
+}

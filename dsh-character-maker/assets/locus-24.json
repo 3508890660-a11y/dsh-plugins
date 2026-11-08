@@ -1,0 +1,50 @@
+{
+  "id": "locus_levenson",
+  "name": "Levenson 多维控制点量表（IPC）",
+  "shortName": "控制点",
+  "family": "locus",
+  "scaleMin": 1,
+  "scaleMax": 6,
+  "scaleLabels": [
+    "非常不同意",
+    "不同意",
+    "略微不同意",
+    "略微同意",
+    "同意",
+    "非常同意"
+  ],
+  "description": "24 题的 Levenson IPC 量表，将控制点分解为三个相互独立的维度：内控（I——事件由自己的行为决定）、他人控制（P——事件由他人中的有权势者决定）、机遇/混乱（C——事件由运气或命运决定）。",
+  "citation": "Levenson, H. (1981). Differentiating between internality, powerful others, and chance. In H. M. Lefcourt (Ed.), Research with the locus of control construct (Vol. 1, pp. 15–63). Academic Press.",
+  "license": "Free for non-commercial research use.",
+  "dimensions": [
+    { "id": "loc_internal",         "label": "内控" },
+    { "id": "loc_powerful_others",  "label": "他人控制" },
+    { "id": "loc_chance",           "label": "机遇/混乱" }
+  ],
+  "items": [
+    { "position": 1,  "text": "我能否当上领导者，主要取决于我自己的能力。",                                                                                                  "dimension": "loc_internal" },
+    { "position": 2,  "text": "在很大程度上，我的生活被偶然事件所支配。",                                                                                                   "dimension": "loc_chance" },
+    { "position": 3,  "text": "我觉得自己生活中发生的事情，大多由有权势的人决定。",                                                                                          "dimension": "loc_powerful_others" },
+    { "position": 4,  "text": "我是否会出车祸，主要取决于我的驾驶技术有多好。",                                                                                              "dimension": "loc_internal" },
+    { "position": 5,  "text": "当我制定计划时，我几乎可以肯定能让它实现。",                                                                                                  "dimension": "loc_internal" },
+    { "position": 6,  "text": "当不幸的事情发生时，我往往没有办法保护自己的利益。",                                                                                          "dimension": "loc_chance" },
+    { "position": 7,  "text": "当我能得到想要的东西时，通常是因为我运气好。",                                                                                                "dimension": "loc_chance" },
+    { "position": 8,  "text": "即使我能力很强，如果不向有权势的人求助，我也不可能得到领导职责。",                                                                            "dimension": "loc_powerful_others" },
+    { "position": 9,  "text": "我朋友的多少，取决于我是一个多好的人。",                                                                                                     "dimension": "loc_internal" },
+    { "position": 10, "text": "我常常发现，该发生的事情终究会发生。",                                                                                                       "dimension": "loc_chance" },
+    { "position": 11, "text": "我的生活主要由有权势的人控制。",                                                                                                              "dimension": "loc_powerful_others" },
+    { "position": 12, "text": "我是否会出车祸，大多是运气问题。",                                                                                                            "dimension": "loc_chance" },
+    { "position": 13, "text": "当我们的利益与强势利益集团的利益发生冲突时，像我们这样的人几乎没有机会保护自己的利益。",                                                            "dimension": "loc_powerful_others" },
+    { "position": 14, "text": "把计划定得太长远并不总是明智的，因为很多事情最终都取决于运气的好坏。",                                                                              "dimension": "loc_chance" },
+    { "position": 15, "text": "想要得到自己想要的东西，就必须讨好上面的那些人。",                                                                                              "dimension": "loc_powerful_others" },
+    { "position": 16, "text": "我能否当上领导者，取决于我是否足够幸运，能在合适的时间出现在合适的地方。",                                                                            "dimension": "loc_chance" },
+    { "position": 17, "text": "如果有权有势的人决定不喜欢我，我大概也交不到多少朋友。",                                                                                          "dimension": "loc_powerful_others" },
+    { "position": 18, "text": "我基本上可以决定自己生活中会发生什么。",                                                                                                       "dimension": "loc_internal" },
+    { "position": 19, "text": "我通常能够保护好自己的个人利益。",                                                                                                            "dimension": "loc_internal" },
+    { "position": 20, "text": "我是否会出车祸，主要取决于另一方驾驶员。",                                                                                                      "dimension": "loc_powerful_others" },
+    { "position": 21, "text": "当我能得到想要的东西时，通常是因为我为它努力付出过。",                                                                                          "dimension": "loc_internal" },
+    { "position": 22, "text": "为了让我的计划顺利实现，我会确保它们符合那些有权支配我的人的意愿。",                                                                              "dimension": "loc_powerful_others" },
+    { "position": 23, "text": "我的生活由我自己的行动决定。",                                                                                                                "dimension": "loc_internal" },
+    { "position": 24, "text": "我朋友是多还是少，主要看命运的安排。",                                                                                                         "dimension": "loc_chance" }
+  ]
+}

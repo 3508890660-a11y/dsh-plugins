@@ -1,0 +1,52 @@
+{
+  "id": "sd3",
+  "name": "短版黑暗三合一量表 (SD3)",
+  "shortName": "黑暗三合一",
+  "family": "dark_triad",
+  "scaleMin": 1,
+  "scaleMax": 5,
+  "scaleLabels": [
+    "非常不同意",
+    "不同意",
+    "既不同意也不反对",
+    "同意",
+    "非常同意"
+  ],
+  "description": "27 题度量三种社会性不讨喜的人格特质：马基雅维利主义（操纵性）、自恋（自我膨胀），以及精神病态（冷漠/冲动）。",
+  "citation": "Jones, D. N., & Paulhus, D. L. (2014). Introducing the Short Dark Triad (SD3): A brief measure of dark personality traits. Assessment, 21(1), 28–41.",
+  "license": "供非商业研究用途免费使用（按作者发布的条款分发）。",
+  "dimensions": [
+    { "id": "machiavellianism", "label": "马基雅维利主义" },
+    { "id": "narcissism",       "label": "自恋" },
+    { "id": "psychopathy",      "label": "精神病态" }
+  ],
+  "items": [
+    { "position": 1,  "text": "把自己的秘密告诉别人不是明智之举。",                                            "dimension": "machiavellianism" },
+    { "position": 2,  "text": "我喜欢用巧妙的操纵来达成自己的目的。",                                "dimension": "machiavellianism" },
+    { "position": 3,  "text": "无论如何，你都要让重要的人站在你这边。",             "dimension": "machiavellianism" },
+    { "position": 4,  "text": "要避免与他人的正面冲突，因为他们以后可能用得上。",    "dimension": "machiavellianism" },
+    { "position": 5,  "text": "留好以后可以用来对付别人的把柄，是明智之举。",  "dimension": "machiavellianism" },
+    { "position": 6,  "text": "应该等合适的时机去报复别人。",                      "dimension": "machiavellianism" },
+    { "position": 7,  "text": "为了保住名声，有些事情你应该瞒着别人。", "dimension": "machiavellianism" },
+    { "position": 8,  "text": "要确保你的计划对自己有利，而不是对别人。",                             "dimension": "machiavellianism" },
+    { "position": 9,  "text": "大多数人都是可以被操纵的。",                                                "dimension": "machiavellianism" },
+    { "position": 10, "text": "别人把我视为天生的领导者。",                                             "dimension": "narcissism" },
+    { "position": 11, "text": "我讨厌成为众人瞩目的焦点。",                                          "dimension": "narcissism",       "reverseKeyed": true },
+    { "position": 12, "text": "很多群体活动没有我的参与往往会变得很无聊。",                              "dimension": "narcissism" },
+    { "position": 13, "text": "我知道自己很特别，因为大家都一直这么说。",                 "dimension": "narcissism" },
+    { "position": 14, "text": "我喜欢结识重要人物。",                                "dimension": "narcissism" },
+    { "position": 15, "text": "如果有人夸奖我，我会感到尴尬。",                                  "dimension": "narcissism",       "reverseKeyed": true },
+    { "position": 16, "text": "有人拿我和名人作比较。",                                         "dimension": "narcissism" },
+    { "position": 17, "text": "我是个普通人。",                                                        "dimension": "narcissism",       "reverseKeyed": true },
+    { "position": 18, "text": "我坚持要求得到应得的尊重。",                                     "dimension": "narcissism" },
+    { "position": 19, "text": "我喜欢报复当权者。",                                          "dimension": "psychopathy" },
+    { "position": 20, "text": "我会避开危险的情况。",                                                  "dimension": "psychopathy",      "reverseKeyed": true },
+    { "position": 21, "text": "报复就要快、要狠。",                                           "dimension": "psychopathy" },
+    { "position": 22, "text": "别人常说我不受控制。",                                           "dimension": "psychopathy" },
+    { "position": 23, "text": "确实，我有时会对别人很刻薄。",                                        "dimension": "psychopathy" },
+    { "position": 24, "text": "惹到我的人总是会后悔。",                                      "dimension": "psychopathy" },
+    { "position": 25, "text": "我从来没有和警察、法律惹上过麻烦。",                                 "dimension": "psychopathy",      "reverseKeyed": true },
+    { "position": 26, "text": "我喜欢和几乎不认识的人发生性关系。",                                  "dimension": "psychopathy" },
+    { "position": 27, "text": "为了得到我想要的，我什么都说得出口。",                                          "dimension": "psychopathy" }
+  ]
+}

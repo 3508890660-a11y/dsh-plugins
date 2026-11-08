@@ -1,0 +1,730 @@
+{
+  "name": "Multifactor Enneagram 深度探索问卷（中文版）",
+  "description": "39 题二选一迫选：一次测出 核心类型+翼 / 本能叠序 / Tritype / 四大三元组（智慧中心·Harmonic情绪应对·Harmony客体关系·Hornevian社交姿态）/ 明暗六角",
+  "source": "interesthings-ygt/AugmentedPersonality scripts/Multifactor Enneagram.js 中文改写",
+  "count": 39,
+  "scoring": {
+    "type_init": 24,
+    "type_min": 0,
+    "type_max": 48,
+    "instinct_init": 6,
+    "instinct_min": 0,
+    "instinct_max": 12,
+    "implement": "每题被选中的选项，其 represents 的型号/本能 +1 分（相对锦标赛计分）。",
+    "note": "上游为『投A则 loser-=s、gainer+=s』的对移实现；本中文版简化为『所选原型 +1』，对同一批二选一对比结果给出的排序与上游一致。全部答毕用 result_functions 推导。"
+  },
+  "result_functions": {
+    "core+wing": "取9型最高为主型；主型相邻两型分高者为翼，输出如 4w5",
+    "instinct_stack": "SP/SX/SO 由高到低，取前二输出如 sx/so",
+    "tritype": "腹(8,9,1) 心(2,3,4) 脑(5,6,7) 三中心各自取最高，拼三码如 478（Katherine Fauvre，27 种原型）",
+    "centers_pct": "智慧中心三元组：body=(8+9+1)/3 腹中心核心情绪愤怒, heart=(2+3+4)/3 心中心羞耻/悲伤, head=(5+6+7)/3 脑中心恐惧/焦虑",
+    "harmonic_groups": "Harmonic 情绪应对三元组：reactive=(4+6+8)/3 反应组(情绪真实), positive=(2+7+9)/3 正面展望组, competency=(1+3+5)/3 能力组",
+    "harmony_triads_daniels": "Harmony 和谐三元组(David Daniels)=客体关系(Belinda Gore)：idealist=(1+4+7)/3 理想主义者组=挫折型, relationist=(2+5+8)/3 关系主义者组=拒绝型, pragmatist=(3+6+9)/3 实用主义者组=依附型",
+    "hornevian_groups": "Hornevian 社交姿态(Karen Horney)：compliant=(1+2+6)/3 顺从组(朝人靠近,Riso-Hudson称superego组), assertive=(3+7+8)/3 进攻组(对抗), withdrawn=(4+5+9)/3 退缩组(远离)",
+    "light_dark_hexad": "light=(1+2+7)/3, dark=(4+5+8)/3"
+  },
+  "items": [
+    {
+      "no": 1,
+      "section": "type",
+      "stem_zh": "我更倾向于帮助别人，是因为……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "因为那是符合道德、客观正确的事（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "因为我得照顾别人的感受、让自己被需要（≈2号）",
+        "represents": 2
+      },
+      "compare": [
+        1,
+        2
+      ]
+    },
+    {
+      "no": 2,
+      "section": "type",
+      "stem_zh": "我更可能把事情做成，当按……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "用正确的方式，即使更慢（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "用最有效率的方式，即使绕了弯（≈3号）",
+        "represents": 3
+      },
+      "compare": [
+        1,
+        3
+      ]
+    },
+    {
+      "no": 3,
+      "section": "type",
+      "stem_zh": "我更可能自我批评，是因为……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "我做了在道德或客观上错误的事（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "我总觉得不如别人、容易嫉妒（≈4号）",
+        "represents": 4
+      },
+      "compare": [
+        1,
+        4
+      ]
+    },
+    {
+      "no": 4,
+      "section": "type",
+      "stem_zh": "我更可能去收集信息，是为了……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "为了改善和让世界更完美、趋近某个理想（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "为了它本身，为了自己更有能力（≈5号）",
+        "represents": 5
+      },
+      "compare": [
+        1,
+        5
+      ]
+    },
+    {
+      "no": 5,
+      "section": "type",
+      "stem_zh": "我更可能有……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "关于万事万物应该如何的强烈信念（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "对世界深深的怀疑和不确定（≈6号）",
+        "represents": 6
+      },
+      "compare": [
+        1,
+        6
+      ]
+    },
+    {
+      "no": 6,
+      "section": "type",
+      "stem_zh": "我的理想主义，更像……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "完美主义，不容许任何错误（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "乐观主义，因为消极实在太痛苦（≈7号）",
+        "represents": 7
+      },
+      "compare": [
+        1,
+        7
+      ]
+    },
+    {
+      "no": 7,
+      "section": "type",
+      "stem_zh": "我更可能表达愤怒，当我想……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "应该如此，压抑其他一切（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "随心所欲，不受规则与限制（≈7号）",
+        "represents": 7
+      },
+      "compare": [
+        1,
+        8
+      ]
+    },
+    {
+      "no": 8,
+      "section": "type",
+      "stem_zh": "我更可能会是一个……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "过于完美主义和僵化（≈1号）",
+        "represents": 1
+      },
+      "option_b": {
+        "text_zh": "过于松懈和不产出（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        1,
+        9
+      ]
+    },
+    {
+      "no": 9,
+      "section": "type",
+      "stem_zh": "我更可能通过什么来吸引注意……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "付出、给予他人，好让自己感到被爱（≈2号）",
+        "represents": 2
+      },
+      "option_b": {
+        "text_zh": "做到最好，好让自己感到有价值（≈3号）",
+        "represents": 3
+      },
+      "compare": [
+        2,
+        3
+      ]
+    },
+    {
+      "no": 10,
+      "section": "type",
+      "stem_zh": "我更可能把注意力放在……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "别人的感受上，因为我需要照顾他们（≈2号）",
+        "represents": 2
+      },
+      "option_b": {
+        "text_zh": "自己的感受上，好深入探索（≈4号）",
+        "represents": 4
+      },
+      "compare": [
+        2,
+        4
+      ]
+    },
+    {
+      "no": 11,
+      "section": "type",
+      "stem_zh": "我更可能会是……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "太愿意付出与表达（≈2号）",
+        "represents": 2
+      },
+      "option_b": {
+        "text_zh": "太私密、情感抽离（≈5号）",
+        "represents": 5
+      },
+      "compare": [
+        2,
+        5
+      ]
+    },
+    {
+      "no": 12,
+      "section": "type",
+      "stem_zh": "我更可能去帮助别人，是因为……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "我确信对方需要什么，并想被需要（≈2号）",
+        "represents": 2
+      },
+      "option_b": {
+        "text_zh": "我需要感到被保护、安全、被支持（≈6号）",
+        "represents": 6
+      },
+      "compare": [
+        2,
+        6
+      ]
+    },
+    {
+      "no": 13,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "感到有责任去帮忙，常把他人需求放在自己之前（≈2号）",
+        "represents": 2
+      },
+      "option_b": {
+        "text_zh": "觉得责任是束缚，需要自由、想做才帮（≈7号）",
+        "represents": 7
+      },
+      "compare": [
+        2,
+        7
+      ]
+    },
+    {
+      "no": 14,
+      "section": "type",
+      "stem_zh": "我更可能通过……来操控别人",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "赞美和恭维（≈2号）",
+        "represents": 2
+      },
+      "option_b": {
+        "text_zh": "权力和强硬（≈8号）",
+        "represents": 8
+      },
+      "compare": [
+        2,
+        8
+      ]
+    },
+    {
+      "no": 15,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "知道别人想要什么，好直接帮他们（≈2号）",
+        "represents": 2
+      },
+      "option_b": {
+        "text_zh": "顺着别人的心意走，好维持和谐（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        2,
+        9
+      ]
+    },
+    {
+      "no": 16,
+      "section": "type",
+      "stem_zh": "别人更常需要看到我的……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "成功形象，我需要有震撼力，哪怕藏起真实的我（≈3号）",
+        "represents": 3
+      },
+      "option_b": {
+        "text_zh": "真实自我，我需要真诚，哪怕感到破碎（≈4号）",
+        "represents": 4
+      },
+      "compare": [
+        3,
+        4
+      ]
+    },
+    {
+      "no": 17,
+      "section": "type",
+      "stem_zh": "我更可能专注于……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "最终结果，我需要达成目标（≈3号）",
+        "represents": 3
+      },
+      "option_b": {
+        "text_zh": "过程，我需要理解这个世界（≈5号）",
+        "represents": 5
+      },
+      "compare": [
+        3,
+        5
+      ]
+    },
+    {
+      "no": 18,
+      "section": "type",
+      "stem_zh": "我更可能把重心放在……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "我在别人眼中如何——我赢了吗？（≈3号）",
+        "represents": 3
+      },
+      "option_b": {
+        "text_zh": "如何避免坏结果——我安全吗？（≈6号）",
+        "represents": 6
+      },
+      "compare": [
+        3,
+        6
+      ]
+    },
+    {
+      "no": 19,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "为赢而搏，实现目标（≈3号）",
+        "represents": 3
+      },
+      "option_b": {
+        "text_zh": "为开心而玩，享受时光（≈7号）",
+        "represents": 7
+      },
+      "compare": [
+        3,
+        7
+      ]
+    },
+    {
+      "no": 20,
+      "section": "type",
+      "stem_zh": "我更可能会是……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "一个打磨过的、成功与名望的形象（≈3号）",
+        "represents": 3
+      },
+      "option_b": {
+        "text_zh": "力量与权力的生猛展示（≈8号）",
+        "represents": 8
+      },
+      "compare": [
+        3,
+        8
+      ]
+    },
+    {
+      "no": 21,
+      "section": "type",
+      "stem_zh": "我更可能把重心放在……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "雄心与把事情做成（≈3号）",
+        "represents": 3
+      },
+      "option_b": {
+        "text_zh": "放松与内心的平和（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        3,
+        9
+      ]
+    },
+    {
+      "no": 22,
+      "section": "type",
+      "stem_zh": "我更可能会是……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "沉浸在自己的感受里，以此理解自己、塑造身份（≈4号）",
+        "represents": 4
+      },
+      "option_b": {
+        "text_zh": "与感受保持距离，以便观察世界如何运作（≈5号）",
+        "represents": 5
+      },
+      "compare": [
+        4,
+        5
+      ]
+    },
+    {
+      "no": 23,
+      "section": "type",
+      "stem_zh": "我更可能拥有一个……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "基于内心情感体验的、非常强烈的自我感（≈4号）",
+        "represents": 4
+      },
+      "option_b": {
+        "text_zh": "摇摆不定的自我感，我常『视情况而定』（≈6号）",
+        "represents": 6
+      },
+      "compare": [
+        4,
+        6
+      ]
+    },
+    {
+      "no": 24,
+      "section": "type",
+      "stem_zh": "当我觉得失望时，我更可能……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "抱怨自己永远得不到缺了的东西（≈4号）",
+        "represents": 4
+      },
+      "option_b": {
+        "text_zh": "转向更新、更好的事物（≈7号）",
+        "represents": 7
+      },
+      "compare": [
+        4,
+        7
+      ]
+    },
+    {
+      "no": 25,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "感觉充满脆弱（≈4号）",
+        "represents": 4
+      },
+      "option_b": {
+        "text_zh": "感觉自己比生命更广大（≈8号）",
+        "represents": 8
+      },
+      "compare": [
+        4,
+        8
+      ]
+    },
+    {
+      "no": 26,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "放大我的情绪，我需要完整体验高低起伏（≈4号）",
+        "represents": 4
+      },
+      "option_b": {
+        "text_zh": "让自己平静下来，我需要平和放松（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        4,
+        9
+      ]
+    },
+    {
+      "no": 27,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "只信自己的头脑，因为别人没那么了解（≈5号）",
+        "represents": 5
+      },
+      "option_b": {
+        "text_zh": "难以信任自己的头脑，因为世界充满不确定（≈6号）",
+        "represents": 6
+      },
+      "compare": [
+        5,
+        6
+      ]
+    },
+    {
+      "no": 28,
+      "section": "type",
+      "stem_zh": "我更可能会是……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "专注而抽离，我需要感到胜任（≈5号）",
+        "represents": 5
+      },
+      "option_b": {
+        "text_zh": "开放而追求多样，我需要感到满足（≈7号）",
+        "represents": 7
+      },
+      "compare": [
+        5,
+        7
+      ]
+    },
+    {
+      "no": 29,
+      "section": "type",
+      "stem_zh": "我更倾向于……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "用头脑思考，行动前需要想清楚（≈5号）",
+        "represents": 5
+      },
+      "option_b": {
+        "text_zh": "用身体行动，倾向于迅速而本能地去做（≈8号）",
+        "represents": 8
+      },
+      "compare": [
+        5,
+        8
+      ]
+    },
+    {
+      "no": 30,
+      "section": "type",
+      "stem_zh": "我更在意……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "对比、细节、抽离、专注的心智活动（≈5号）",
+        "represents": 5
+      },
+      "option_b": {
+        "text_zh": "相似、和谐、舒适、游移的思绪（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        5,
+        9
+      ]
+    },
+    {
+      "no": 31,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "生动地想象最坏情况（≈6号）",
+        "represents": 6
+      },
+      "option_b": {
+        "text_zh": "相信事情会往最好的方向发展（≈7号）",
+        "represents": 7
+      },
+      "compare": [
+        6,
+        7
+      ]
+    },
+    {
+      "no": 32,
+      "section": "type",
+      "stem_zh": "说到恐惧，我更可能……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "承认自己的恐惧，好去战胜它（≈6号）",
+        "represents": 6
+      },
+      "option_b": {
+        "text_zh": "否认自己的恐惧，好让自己更强大（≈8号）",
+        "represents": 8
+      },
+      "compare": [
+        6,
+        8
+      ]
+    },
+    {
+      "no": 33,
+      "section": "type",
+      "stem_zh": "当事情乱套时，我更可能……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "比应有的程度更担忧、更过度思考（≈6号）",
+        "represents": 6
+      },
+      "option_b": {
+        "text_zh": "淡化问题的重要性（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        6,
+        9
+      ]
+    },
+    {
+      "no": 34,
+      "section": "type",
+      "stem_zh": "我更可能去追求……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "多样性，我不想错过享乐（≈7号）",
+        "represents": 7
+      },
+      "option_b": {
+        "text_zh": "强烈感，我需要感到强大（≈8号）",
+        "represents": 8
+      },
+      "compare": [
+        7,
+        8
+      ]
+    },
+    {
+      "no": 35,
+      "section": "type",
+      "stem_zh": "我更可能会……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "追逐我想要的，因为我知道自己需要什么来享乐（≈7号）",
+        "represents": 7
+      },
+      "option_b": {
+        "text_zh": "顺着别人想要的走，因为我需要维持和平（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        7,
+        9
+      ]
+    },
+    {
+      "no": 36,
+      "section": "type",
+      "stem_zh": "我内在的稳定感更像……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "我需要感到强大而主动掌控环境（≈8号）",
+        "represents": 8
+      },
+      "option_b": {
+        "text_zh": "我需要感到舒适，保持内心的平和与安稳（≈9号）",
+        "represents": 9
+      },
+      "compare": [
+        8,
+        9
+      ]
+    },
+    {
+      "no": 37,
+      "section": "instinct",
+      "stem_zh": "我会本能地关注……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "我的身体安全与舒适——我舒服吗？（自保）",
+        "represents": "sp"
+      },
+      "option_b": {
+        "text_zh": "一对一的联结——我们之间有没有化学反应？（一对一）",
+        "represents": "sx"
+      },
+      "compare": [
+        "sp",
+        "sx"
+      ]
+    },
+    {
+      "no": 38,
+      "section": "instinct",
+      "stem_zh": "我会本能地关注……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "确保自己资源充足——我够吗？（自保）",
+        "represents": "sp"
+      },
+      "option_b": {
+        "text_zh": "为群体做贡献——我够重要吗？（社交）",
+        "represents": "so"
+      },
+      "compare": [
+        "sp",
+        "so"
+      ]
+    },
+    {
+      "no": 39,
+      "section": "instinct",
+      "stem_zh": "我会本能地关注……",
+      "stem_en": null,
+      "option_a": {
+        "text_zh": "一对一的联结——我们合不合拍？（一对一）",
+        "represents": "sx"
+      },
+      "option_b": {
+        "text_zh": "群体关系——我够受欢迎、够被需要吗？（社交）",
+        "represents": "so"
+      },
+      "compare": [
+        "sx",
+        "so"
+      ]
+    }
+  ]
+}

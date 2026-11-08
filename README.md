@@ -7,6 +7,7 @@ DeepSeek Harness (DSH) 自研插件集合，monorepo 结构，每个子目录一
 | 插件 | 说明 |
 | --- | --- |
 | [dsh-novel-writer](dsh-novel-writer/) | 小说写作助手：句式/情感/意象分析、伏笔设定管理、本地语义检索、氛围光谱、风格画像报告、文笔六维基线带、原创模式与创作资料、写作哨兵（衔接/OOC/大纲） |
+| [dsh-character-maker](dsh-character-maker/) | 角色设定工作坊：以九型人格为主干、MBTI / 大五为补充，外加 8 个 Likert 量表；15 种问卷计分、结构化角色卡、LLM 六节深度人格画像、关系网图，可与 dsh-novel-writer 双向联动 |
 | [novel-editor](novel-editor/) | 小说编辑引擎（本地 novel-editor 模型，QLoRA 微调 Qwen3-4B）：校对/轻度修正/深度润色/一致性审查/去 AI 痕，经 Ollama 推理 |
 | [shortnovel-workflow](shortnovel-workflow/) | 爆款短篇创作工作流：主题 → 脑洞(5) → 导语(5) → 大纲(10章×30情节点) → 正文(~1.2万字) → 审稿，严格分阶段 |
 | [dsh-llm-ollama](dsh-llm-ollama/) | Ollama LLM 适配器，为 novel-editor / shortnovel-workflow 提供本地推理后端 |

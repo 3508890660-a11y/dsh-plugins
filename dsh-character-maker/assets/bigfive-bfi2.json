@@ -1,0 +1,787 @@
+{
+  "test": "BFI-2",
+  "version": "大五人格问卷第二版 (Big Five Inventory-2), 2015 John & Soto",
+  "scale": "5点同意度量表: 1非常不同意 2不太同意 3态度中立 4比较同意 5非常同意",
+  "citation": "Soto, C. J., & John, O. P. (2017). Journal of Personality and Social Psychology, 113, 117-143.",
+  "items": [
+    {
+      "n": 1,
+      "item": "性格外向，喜欢交际",
+      "dimension": "外向性",
+      "facet": "外向性-社交",
+      "reverse_keyed": false
+    },
+    {
+      "n": 2,
+      "item": "心肠柔软，有同情心",
+      "dimension": "宜人性",
+      "facet": "宜人性-同情",
+      "reverse_keyed": false
+    },
+    {
+      "n": 3,
+      "item": "缺乏条理",
+      "dimension": "尽责性",
+      "facet": "尽责性-条理",
+      "reverse_keyed": true
+    },
+    {
+      "n": 4,
+      "item": "从容，善于处理压力",
+      "dimension": "神经质",
+      "facet": "神经质-焦虑",
+      "reverse_keyed": true
+    },
+    {
+      "n": 5,
+      "item": "对艺术没有什么兴趣",
+      "dimension": "开放性",
+      "facet": "开放性-审美",
+      "reverse_keyed": true
+    },
+    {
+      "n": 6,
+      "item": "性格坚定自信，敢于表达自己的观点",
+      "dimension": "外向性",
+      "facet": "外向性-果断",
+      "reverse_keyed": false
+    },
+    {
+      "n": 7,
+      "item": "为人恭谦，尊重他人",
+      "dimension": "宜人性",
+      "facet": "宜人性-谦恭",
+      "reverse_keyed": false
+    },
+    {
+      "n": 8,
+      "item": "比较懒",
+      "dimension": "尽责性",
+      "facet": "尽责性-效率",
+      "reverse_keyed": true
+    },
+    {
+      "n": 9,
+      "item": "经历挫折后仍能保持积极心态",
+      "dimension": "神经质",
+      "facet": "神经质-抑郁",
+      "reverse_keyed": true
+    },
+    {
+      "n": 10,
+      "item": "对许多不同的事物都感兴趣",
+      "dimension": "开放性",
+      "facet": "开放性-好奇",
+      "reverse_keyed": false
+    },
+    {
+      "n": 11,
+      "item": "很少觉得兴奋或者特别想要(做)什么",
+      "dimension": "外向性",
+      "facet": "外向性-活力",
+      "reverse_keyed": true
+    },
+    {
+      "n": 12,
+      "item": "常常挑别人的毛病",
+      "dimension": "宜人性",
+      "facet": "宜人性-信任",
+      "reverse_keyed": true
+    },
+    {
+      "n": 13,
+      "item": "可信赖的，可靠的",
+      "dimension": "尽责性",
+      "facet": "尽责性-负责",
+      "reverse_keyed": false
+    },
+    {
+      "n": 14,
+      "item": "喜怒无常，情绪起伏较多",
+      "dimension": "神经质",
+      "facet": "神经质-易变",
+      "reverse_keyed": false
+    },
+    {
+      "n": 15,
+      "item": "善于创造，能找到聪明的方法来做事",
+      "dimension": "开放性",
+      "facet": "开放性-想象",
+      "reverse_keyed": false
+    },
+    {
+      "n": 16,
+      "item": "比较安静",
+      "dimension": "外向性",
+      "facet": "外向性-社交",
+      "reverse_keyed": true
+    },
+    {
+      "n": 17,
+      "item": "对他人没有什么同情心",
+      "dimension": "宜人性",
+      "facet": "宜人性-同情",
+      "reverse_keyed": true
+    },
+    {
+      "n": 18,
+      "item": "做事有计划有条理",
+      "dimension": "尽责性",
+      "facet": "尽责性-条理",
+      "reverse_keyed": false
+    },
+    {
+      "n": 19,
+      "item": "容易紧张",
+      "dimension": "神经质",
+      "facet": "神经质-焦虑",
+      "reverse_keyed": false
+    },
+    {
+      "n": 20,
+      "item": "着迷于艺术、音乐或文学",
+      "dimension": "开放性",
+      "facet": "开放性-审美",
+      "reverse_keyed": false
+    },
+    {
+      "n": 21,
+      "item": "常常处于主导地位，像个领导一样",
+      "dimension": "外向性",
+      "facet": "外向性-果断",
+      "reverse_keyed": false
+    },
+    {
+      "n": 22,
+      "item": "常与他人意见不和",
+      "dimension": "宜人性",
+      "facet": "宜人性-谦恭",
+      "reverse_keyed": true
+    },
+    {
+      "n": 23,
+      "item": "很难开始行动起来去完成一项任务",
+      "dimension": "尽责性",
+      "facet": "尽责性-效率",
+      "reverse_keyed": true
+    },
+    {
+      "n": 24,
+      "item": "觉得有安全感，对自己满意",
+      "dimension": "神经质",
+      "facet": "神经质-抑郁",
+      "reverse_keyed": true
+    },
+    {
+      "n": 25,
+      "item": "不喜欢知识性或者哲学性强的讨论",
+      "dimension": "开放性",
+      "facet": "开放性-好奇",
+      "reverse_keyed": true
+    },
+    {
+      "n": 26,
+      "item": "不如别人有活力",
+      "dimension": "外向性",
+      "facet": "外向性-活力",
+      "reverse_keyed": true
+    },
+    {
+      "n": 27,
+      "item": "宽宏大量",
+      "dimension": "宜人性",
+      "facet": "宜人性-信任",
+      "reverse_keyed": false
+    },
+    {
+      "n": 28,
+      "item": "有时比较没有责任心",
+      "dimension": "尽责性",
+      "facet": "尽责性-负责",
+      "reverse_keyed": true
+    },
+    {
+      "n": 29,
+      "item": "情绪稳定，不易生气",
+      "dimension": "神经质",
+      "facet": "神经质-易变",
+      "reverse_keyed": true
+    },
+    {
+      "n": 30,
+      "item": "几乎没有什么创造性",
+      "dimension": "开放性",
+      "facet": "开放性-想象",
+      "reverse_keyed": true
+    },
+    {
+      "n": 31,
+      "item": "有时会害羞，比较内向",
+      "dimension": "外向性",
+      "facet": "外向性-社交",
+      "reverse_keyed": true
+    },
+    {
+      "n": 32,
+      "item": "乐于助人，待人无私",
+      "dimension": "宜人性",
+      "facet": "宜人性-同情",
+      "reverse_keyed": false
+    },
+    {
+      "n": 33,
+      "item": "习惯让事物保持整洁有序",
+      "dimension": "尽责性",
+      "facet": "尽责性-条理",
+      "reverse_keyed": false
+    },
+    {
+      "n": 34,
+      "item": "时常忧心忡忡，担心很多事情",
+      "dimension": "神经质",
+      "facet": "神经质-焦虑",
+      "reverse_keyed": false
+    },
+    {
+      "n": 35,
+      "item": "重视艺术与审美",
+      "dimension": "开放性",
+      "facet": "开放性-审美",
+      "reverse_keyed": false
+    },
+    {
+      "n": 36,
+      "item": "感觉自己很难对他人产生影响",
+      "dimension": "外向性",
+      "facet": "外向性-果断",
+      "reverse_keyed": true
+    },
+    {
+      "n": 37,
+      "item": "有时对人比较粗鲁",
+      "dimension": "宜人性",
+      "facet": "宜人性-谦恭",
+      "reverse_keyed": true
+    },
+    {
+      "n": 38,
+      "item": "有效率，做事有始有终",
+      "dimension": "尽责性",
+      "facet": "尽责性-效率",
+      "reverse_keyed": false
+    },
+    {
+      "n": 39,
+      "item": "时常觉得悲伤",
+      "dimension": "神经质",
+      "facet": "神经质-抑郁",
+      "reverse_keyed": false
+    },
+    {
+      "n": 40,
+      "item": "思想深刻",
+      "dimension": "开放性",
+      "facet": "开放性-好奇",
+      "reverse_keyed": false
+    },
+    {
+      "n": 41,
+      "item": "精力充沛",
+      "dimension": "外向性",
+      "facet": "外向性-活力",
+      "reverse_keyed": false
+    },
+    {
+      "n": 42,
+      "item": "不相信别人，怀疑别人的意图",
+      "dimension": "宜人性",
+      "facet": "宜人性-信任",
+      "reverse_keyed": true
+    },
+    {
+      "n": 43,
+      "item": "可靠的，总是值得他人信赖",
+      "dimension": "尽责性",
+      "facet": "尽责性-负责",
+      "reverse_keyed": false
+    },
+    {
+      "n": 44,
+      "item": "能够控制自己的情绪",
+      "dimension": "神经质",
+      "facet": "神经质-易变",
+      "reverse_keyed": true
+    },
+    {
+      "n": 45,
+      "item": "缺乏想象力",
+      "dimension": "开放性",
+      "facet": "开放性-想象",
+      "reverse_keyed": true
+    },
+    {
+      "n": 46,
+      "item": "爱说话，健谈",
+      "dimension": "外向性",
+      "facet": "外向性-社交",
+      "reverse_keyed": false
+    },
+    {
+      "n": 47,
+      "item": "有时对人冷淡，漠不关心",
+      "dimension": "宜人性",
+      "facet": "宜人性-同情",
+      "reverse_keyed": true
+    },
+    {
+      "n": 48,
+      "item": "乱糟糟的，不爱收拾",
+      "dimension": "尽责性",
+      "facet": "尽责性-条理",
+      "reverse_keyed": true
+    },
+    {
+      "n": 49,
+      "item": "很少觉得焦虑或者害怕",
+      "dimension": "神经质",
+      "facet": "神经质-焦虑",
+      "reverse_keyed": true
+    },
+    {
+      "n": 50,
+      "item": "觉得诗歌、戏剧很无聊",
+      "dimension": "开放性",
+      "facet": "开放性-审美",
+      "reverse_keyed": true
+    },
+    {
+      "n": 51,
+      "item": "更喜欢让别人来领头负责",
+      "dimension": "外向性",
+      "facet": "外向性-果断",
+      "reverse_keyed": true
+    },
+    {
+      "n": 52,
+      "item": "待人谦逊礼让",
+      "dimension": "宜人性",
+      "facet": "宜人性-谦恭",
+      "reverse_keyed": false
+    },
+    {
+      "n": 53,
+      "item": "有恒心，能坚持把事情做完",
+      "dimension": "尽责性",
+      "facet": "尽责性-效率",
+      "reverse_keyed": false
+    },
+    {
+      "n": 54,
+      "item": "时常觉得郁郁寡欢",
+      "dimension": "神经质",
+      "facet": "神经质-抑郁",
+      "reverse_keyed": false
+    },
+    {
+      "n": 55,
+      "item": "对抽象的概念和想法没什么兴趣",
+      "dimension": "开放性",
+      "facet": "开放性-好奇",
+      "reverse_keyed": true
+    },
+    {
+      "n": 56,
+      "item": "充满热情",
+      "dimension": "外向性",
+      "facet": "外向性-活力",
+      "reverse_keyed": false
+    },
+    {
+      "n": 57,
+      "item": "把人往最好的方面想",
+      "dimension": "宜人性",
+      "facet": "宜人性-信任",
+      "reverse_keyed": false
+    },
+    {
+      "n": 58,
+      "item": "有时候会做出一些不负责任的行为",
+      "dimension": "尽责性",
+      "facet": "尽责性-负责",
+      "reverse_keyed": true
+    },
+    {
+      "n": 59,
+      "item": "情绪多变，容易愤怒",
+      "dimension": "神经质",
+      "facet": "神经质-易变",
+      "reverse_keyed": false
+    },
+    {
+      "n": 60,
+      "item": "有创意，能想出新点子",
+      "dimension": "开放性",
+      "facet": "开放性-想象",
+      "reverse_keyed": false
+    }
+  ],
+  "dimensions": [
+    {
+      "dimension": "外向性",
+      "items": [
+        1,
+        6,
+        11,
+        16,
+        21,
+        26,
+        31,
+        36,
+        41,
+        46,
+        51,
+        56
+      ],
+      "reverse_items": [
+        11,
+        16,
+        26,
+        31,
+        36,
+        51
+      ],
+      "count": 12
+    },
+    {
+      "dimension": "宜人性",
+      "items": [
+        2,
+        7,
+        12,
+        17,
+        22,
+        27,
+        32,
+        37,
+        42,
+        47,
+        52,
+        57
+      ],
+      "reverse_items": [
+        12,
+        17,
+        22,
+        37,
+        42,
+        47
+      ],
+      "count": 12
+    },
+    {
+      "dimension": "尽责性",
+      "items": [
+        3,
+        8,
+        13,
+        18,
+        23,
+        28,
+        33,
+        38,
+        43,
+        48,
+        53,
+        58
+      ],
+      "reverse_items": [
+        3,
+        8,
+        23,
+        28,
+        48,
+        58
+      ],
+      "count": 12
+    },
+    {
+      "dimension": "神经质",
+      "items": [
+        4,
+        9,
+        14,
+        19,
+        24,
+        29,
+        34,
+        39,
+        44,
+        49,
+        54,
+        59
+      ],
+      "reverse_items": [
+        4,
+        9,
+        24,
+        29,
+        44,
+        49
+      ],
+      "count": 12
+    },
+    {
+      "dimension": "开放性",
+      "items": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60
+      ],
+      "reverse_items": [
+        5,
+        25,
+        30,
+        45,
+        50,
+        55
+      ],
+      "count": 12
+    }
+  ],
+  "facets": [
+    {
+      "facet": "外向性-社交",
+      "dimension": "外向性",
+      "items": [
+        1,
+        16,
+        31,
+        46
+      ],
+      "reverse_items": [
+        16,
+        31
+      ],
+      "count": 4
+    },
+    {
+      "facet": "外向性-果断",
+      "dimension": "外向性",
+      "items": [
+        6,
+        21,
+        36,
+        51
+      ],
+      "reverse_items": [
+        36,
+        51
+      ],
+      "count": 4
+    },
+    {
+      "facet": "外向性-活力",
+      "dimension": "外向性",
+      "items": [
+        11,
+        26,
+        41,
+        56
+      ],
+      "reverse_items": [
+        11,
+        26
+      ],
+      "count": 4
+    },
+    {
+      "facet": "宜人性-同情",
+      "dimension": "宜人性",
+      "items": [
+        2,
+        17,
+        32,
+        47
+      ],
+      "reverse_items": [
+        17,
+        47
+      ],
+      "count": 4
+    },
+    {
+      "facet": "宜人性-谦恭",
+      "dimension": "宜人性",
+      "items": [
+        7,
+        22,
+        37,
+        52
+      ],
+      "reverse_items": [
+        22,
+        37
+      ],
+      "count": 4
+    },
+    {
+      "facet": "宜人性-信任",
+      "dimension": "宜人性",
+      "items": [
+        12,
+        27,
+        42,
+        57
+      ],
+      "reverse_items": [
+        12,
+        42
+      ],
+      "count": 4
+    },
+    {
+      "facet": "尽责性-条理",
+      "dimension": "尽责性",
+      "items": [
+        3,
+        18,
+        33,
+        48
+      ],
+      "reverse_items": [
+        3,
+        48
+      ],
+      "count": 4
+    },
+    {
+      "facet": "尽责性-效率",
+      "dimension": "尽责性",
+      "items": [
+        8,
+        23,
+        38,
+        53
+      ],
+      "reverse_items": [
+        8,
+        23
+      ],
+      "count": 4
+    },
+    {
+      "facet": "尽责性-负责",
+      "dimension": "尽责性",
+      "items": [
+        13,
+        28,
+        43,
+        58
+      ],
+      "reverse_items": [
+        28,
+        58
+      ],
+      "count": 4
+    },
+    {
+      "facet": "神经质-焦虑",
+      "dimension": "神经质",
+      "items": [
+        4,
+        19,
+        34,
+        49
+      ],
+      "reverse_items": [
+        4,
+        49
+      ],
+      "count": 4
+    },
+    {
+      "facet": "神经质-抑郁",
+      "dimension": "神经质",
+      "items": [
+        9,
+        24,
+        39,
+        54
+      ],
+      "reverse_items": [
+        9,
+        24
+      ],
+      "count": 4
+    },
+    {
+      "facet": "神经质-易变",
+      "dimension": "神经质",
+      "items": [
+        14,
+        29,
+        44,
+        59
+      ],
+      "reverse_items": [
+        29,
+        44
+      ],
+      "count": 4
+    },
+    {
+      "facet": "开放性-好奇",
+      "dimension": "开放性",
+      "items": [
+        10,
+        25,
+        40,
+        55
+      ],
+      "reverse_items": [
+        25,
+        55
+      ],
+      "count": 4
+    },
+    {
+      "facet": "开放性-审美",
+      "dimension": "开放性",
+      "items": [
+        5,
+        20,
+        35,
+        50
+      ],
+      "reverse_items": [
+        5,
+        50
+      ],
+      "count": 4
+    },
+    {
+      "facet": "开放性-想象",
+      "dimension": "开放性",
+      "items": [
+        15,
+        30,
+        45,
+        60
+      ],
+      "reverse_items": [
+        30,
+        45
+      ],
+      "count": 4
+    }
+  ]
+}

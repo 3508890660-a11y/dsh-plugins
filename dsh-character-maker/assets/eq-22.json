@@ -1,0 +1,145 @@
+{
+  "id": "eq_short",
+  "name": "同理心商数 — 短版 (EQ-Short)",
+  "shortName": "同理心",
+  "family": "empathy",
+  "scaleMin": 1,
+  "scaleMax": 4,
+  "scaleLabels": [
+    "强烈不同意",
+    "不同意",
+    "同意",
+    "强烈同意"
+  ],
+  "description": "22-item short form of the Empathy Quotient (EQ), measuring cognitive and affective empathy as a single dimension.",
+  "citation": "Wakabayashi, A., Baron-Cohen, S., Wheelwright, S., et al. (2006). Development of short forms of the Empathy Quotient (EQ-Short) and the Systemizing Quotient (SQ-Short). Personality and Individual Differences, 41(5), 929–940.",
+  "license": "Free for non-commercial research use.",
+  "dimensions": [
+    {
+      "id": "empathy_quotient",
+      "label": "同理心商数"
+    }
+  ],
+  "items": [
+    {
+      "position": 1,
+      "text": "我能很容易看出别人是否想加入一段对话。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 2,
+      "text": "当别人一遍听不懂时，我很难把我自己懂的东西解释清楚。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 3,
+      "text": "我真的很享受照顾别人。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 4,
+      "text": "在社交场合，我很难知道该怎么做。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 5,
+      "text": "别人常说我在讨论中把观点说得太绝、过火了。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 6,
+      "text": "见朋友迟到，我并不会太在意。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 7,
+      "text": "友谊和亲密关系太难维系，所以我往往不费那个心。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 8,
+      "text": "我经常难以判断一个言行是否失礼。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 9,
+      "text": "交谈时，我常专注于自己的想法，而没去理会对方在想什么。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 10,
+      "text": "小时候，我很喜欢切蚯蚓看看会发生什么。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 11,
+      "text": "别人话里有话时，我能迅速听出来。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 12,
+      "text": "我很难理解为什么一些事会让人那么在意。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 13,
+      "text": "我很容易设身处地地站在别人的角度想问题。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 14,
+      "text": "我很擅长预测某人的感受。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 15,
+      "text": "我能很快发现群里某人正感到尴尬或不自在。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 16,
+      "text": "别人说我擅长理解他们的感受和想法。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 17,
+      "text": "我能轻松判断对方是否对我说的感兴趣或感到无聊。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 18,
+      "text": "朋友常常跟我倾诉他们的困扰，因为我说我善解人意。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 19,
+      "text": "即使对方不直接说，我也能察觉自己是否冒昧打扰了。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 20,
+      "text": "别人常说我不够体贴，虽然我不总是看出哪里。",
+      "dimension": "empathy_quotient",
+      "reverseKeyed": true
+    },
+    {
+      "position": 21,
+      "text": "我能快速而直觉地体会到别人的感受。",
+      "dimension": "empathy_quotient"
+    },
+    {
+      "position": 22,
+      "text": "我能轻易想出对方可能想聊什么。",
+      "dimension": "empathy_quotient"
+    }
+  ]
+}
