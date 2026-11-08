@@ -1,6 +1,6 @@
 # DSH Plugins
 
-DeepSeek Harness (DSH) 自研插件集合， monorepo 结构，每个子目录一个插件。
+DeepSeek Harness (DSH) 自研插件集合，monorepo 结构，每个子目录一个插件。
 
 ## 目录
 
